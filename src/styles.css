@@ -1,5 +1,5 @@
 .summer {
-  background-image: url("src/images/summer.jpg");
+  background-image: url("C:\Users\User\Desktop\Weather_app\src\images\summer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -7,7 +7,7 @@
   background-color: #464646;
 }
 .autumn {
-  background-image: url("src/images/autumn.jpg");
+  background-image: url("C:\Users\User\Desktop\Weather_app\src\images\autumn.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -15,7 +15,7 @@
   background-color: #464646;
 }
 .winter {
-  background-image: url("src/images/winter.jpg");
+  background-image: url("C:\Users\User\Desktop\Weather_app\src\images\winter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -23,7 +23,7 @@
   background-color: #464646;
 }
 .spring {
-  background-image: url("src/images/spring.jpg");
+  background-image: url("C:\Users\User\Desktop\Weather_app\src\images\spring.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
