@@ -1,0 +1,130 @@
+.summer {
+  background-image: url("src/images/summer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #464646;
+}
+.autumn {
+  background-image: url("src/images/autumn.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #464646;
+}
+.winter {
+  background-image: url("src/images/winter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #464646;
+}
+.spring {
+  background-image: url("src/images/spring.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #464646;
+}
+
+.weather-app {
+  margin: 80px auto;
+  max-width: 800px;
+  min-height: 80%;
+  padding: 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 24px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 20px rgba(170, 155, 155, 0.1);
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+.winter .weather-app {
+  background: rgba(0, 0, 0, 0.5);
+}
+.spring .weather-app {
+  background: rgba(0, 0, 0, 0.2);
+}
+.autumn .weather-app {
+  background: rgba(0, 0, 0, 0.3);
+}
+.fa-location-dot {
+  transition: all 150ms ease-out;
+}
+.fa-location-dot:hover {
+  color: #0d6efd;
+  cursor: pointer;
+}
+
+.current-city-time {
+  margin: 40px 0;
+  font-weight: 700;
+  list-style: none;
+}
+
+.current-weather {
+  margin: 90px 0 30px;
+}
+.current-weather i {
+  font-size: 96px;
+}
+
+.units {
+  font-size: 21px;
+  position: relative;
+  top: -32px;
+}
+#celsiumUnits,
+#fahrenheitUnits {
+  color: white;
+}
+
+.current-weather .current-temperature {
+  font-size: 68px;
+  text-align: left;
+  font-weight: 900;
+}
+.current-weather .current-details {
+  text-align: left;
+  font-size: 15px;
+  list-style: none;
+}
+
+.days-forecast {
+  margin-top: 40px;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 15px;
+  font-size: 18px;
+}
+.fa-solid {
+  font-size: 42px;
+}
+
+.fa-sun {
+  color: #ffc93c;
+  opacity: 0.8;
+}
+.autumn .fa-sun {
+  opacity: 1;
+}
+
+.fa-cloud,
+.fa-cloud-rain {
+  color: #bcc7d4;
+  opacity: 0.8;
+}
+.autumn .fa-cloud,
+.fa-cloud-rain {
+  opacity: 1;
+}
+
+.day {
+  font-weight: 700;
+}
