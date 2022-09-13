@@ -1,5 +1,5 @@
 .summer {
-  background-image: url("C:/Users/User/Desktop/Weather_app/src/images.summer.jpg");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/120/original/summer.jpg?1663063490");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -7,7 +7,7 @@
   background-color: #464646;
 }
 .autumn {
-  background-image: url("C:/Users/User/Desktop/Weather_app/src/images/autumn.jpg");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/118/original/autumn.jpg?1663063469");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -15,7 +15,7 @@
   background-color: #464646;
 }
 .winter {
-  background-image: url("C:/Users/User/Desktop/Weather_app/src/images/winter.jpg");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/121/original/winter.jpg?1663063500");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -23,7 +23,7 @@
   background-color: #464646;
 }
 .spring {
-  background-image: url("C:/Users/User/Desktop/Weather_app/src/images/spring.jpg");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/119/original/spring.jpg?1663063481");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
