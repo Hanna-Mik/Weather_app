@@ -166,6 +166,7 @@ h1 {
 .season_name {
   display: inline;
   text-align: center;
+  font-size: 15px;
 }
 .season_link {
   color: #fff;
