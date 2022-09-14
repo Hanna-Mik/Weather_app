@@ -1,3 +1,13 @@
+header {
+  margin-top: 40px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
 .summer {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/120/original/summer.jpg?1663063490");
   background-size: cover;
@@ -54,12 +64,25 @@
 .autumn .weather-app {
   background: rgba(0, 0, 0, 0.3);
 }
+
+#submit-button {
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  font-size: 5px;
+  padding: 0 8px;
+  border: none;
+  transition: all 150ms ease-out;
+}
+#submit-button:hover {
+  color: #0a58ca;
+}
 .fa-location-dot {
   transition: all 150ms ease-out;
-  color: #0d6efd;
+  color: white;
 }
 .fa-location-dot:hover {
-  color: white;
+  color: #0a58ca;
   cursor: pointer;
 }
 
@@ -128,4 +151,33 @@
 
 .day {
   font-weight: 700;
+}
+
+.try_seasons {
+  color: white;
+  list-style: none;
+  text-align: center;
+}
+.season {
+  display: inline;
+}
+.name {
+  color: #fff;
+  transition: all 150ms ease-out;
+}
+.name:hover {
+  color: #0a58ca;
+}
+footer {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.author_information {
+  color: white;
+  transition: all 150ms ease-out;
+}
+.author_information:hover {
+  color: #0a58ca;
 }

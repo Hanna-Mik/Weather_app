@@ -33,6 +33,9 @@
   </head>
   <body>
     <div class="container">
+      <header>
+        <h1>Four Seasons Weather App</h1>
+      </header>
       <div class="weather-app">
         <form id="submit-form">
           <div class="row">
@@ -48,13 +51,10 @@
               </div>
             </div>
             <div class="col-2">
-              <div class="mb-3">
-                <input
-                  type="submit"
-                  class="btn btn-primary shadow-sm"
-                  id="submit-button"
-                  value="Search"
-                />
+              <div>
+                <button type="submit" id="submit-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
               </div>
             </div>
             <div class="col-2">
@@ -127,6 +127,23 @@
           </div>
         </div>
       </div>
+      <ul class="try_seasons">
+        <li class="season">Look at other seasons:</li>
+        <li class="season name"><a href="#">Winter</a></li>
+        <li class="season name"><a href="#">Spring</a></li>
+        <li class="season name"><a href="#">Summer</a></li>
+        <li class="season name"><a href="#">Autumn</a></li>
+      </ul>
+      <footer>
+        <a
+          class="author_information"
+          href="https://github.com/Hanna-Mik/Weather_app"
+          target="_blank"
+          alt="look at the repository on github.com"
+          >Open-source code</a
+        >
+        , by Hanna Shchepeleva
+      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
