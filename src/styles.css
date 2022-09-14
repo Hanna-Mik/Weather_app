@@ -7,7 +7,9 @@ h1 {
   color: #fff;
   text-align: center;
 }
-
+.earth_icon {
+  font-size: 26px;
+}
 .summer {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/120/original/summer.jpg?1663063490");
   background-size: cover;
@@ -181,4 +183,7 @@ footer {
 }
 .author_information:hover {
   color: #0a58ca;
+}
+.fa-earth-americas {
+  font-size: 26px;
 }
