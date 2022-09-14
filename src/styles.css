@@ -156,20 +156,13 @@ h1 {
 .try_seasons {
   color: white;
   text-align: center;
-}
-.season_list {
-  display: block;
-  list-style: none;
-  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
-.season_name {
-  display: inline;
-  text-align: center;
-  font-size: 15px;
-}
 .season_link {
   color: #fff;
+  font-size: 15px;
   transition: all 150ms ease-out;
 }
 .season_link:hover {
