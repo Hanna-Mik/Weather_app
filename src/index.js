@@ -40,8 +40,7 @@ function formatCurrentTime(currentData) {
   currentTimeLi.innerHTML = currentDateTime;
 }
 
-function changeSeasons(currentMonth) {
-  let month = currentMonth.getMonth();
+function changeSeasons(month) {
   let bodyBackground = document.querySelector("body");
   let appBackground = document.querySelector(".weather-app");
   if (month === 11 || month < 3) {
@@ -104,10 +103,19 @@ function getCurrentLocation(event) {
 }
 
 formatCurrentTime(new Date());
-changeSeasons(new Date());
+changeSeasons(new Date().getMonth());
 let submitForm = document.querySelector("#submit-form");
 submitForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#search-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+let tryWinterLink = document.querySelector("#winter");
+tryWinterLink.addEventListener("click", changeSeasons(0));
+let trySpringLink = document.querySelector("#spring");
+trySpringLink.addEventListener("click", changeSeasons(3));
+let trySummerLink = document.querySelector("#summer");
+trySummerLink.addEventListener("click", changeSeasons(6));
+let tryAutumnLink = document.querySelector("#autumn");
+tryAutumnLink.addEventListener("click", changeSeasons(9));
 
+console.log(tryWinterLink);
 searchCity("Kyiv");
