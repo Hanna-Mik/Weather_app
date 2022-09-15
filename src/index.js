@@ -106,13 +106,13 @@ function getCurrentLocation(event) {
 }
 function tryWinterImage() {
   document.body.style.backgroundImage =
-    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/248/original/pexels-david-dibert-730462.jpg?1663249108')";
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/262/original/aaron-burden-ejUU3U7Rlns-unsplash.jpg?1663255208')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
 }
 function trySpringImage() {
   document.body.style.backgroundImage =
-    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/119/original/spring.jpg?1663063481')";
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/261/original/sergey-shmidt-koy6FlCCy5s-unsplash.jpg?1663255187')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
 }
