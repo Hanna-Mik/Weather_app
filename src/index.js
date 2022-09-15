@@ -106,7 +106,7 @@ function getCurrentLocation(event) {
 }
 function tryWinterImage() {
   document.body.style.backgroundImage =
-    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/121/original/winter.jpg?1663063500')";
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/248/original/pexels-david-dibert-730462.jpg?1663249108')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
 }
