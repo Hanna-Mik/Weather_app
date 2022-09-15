@@ -43,15 +43,18 @@ function formatCurrentTime(currentData) {
 function changeSeasons(month) {
   let bodyBackground = document.querySelector("body");
   let appBackground = document.querySelector(".weather-app");
-  if (month === 11 || month < 3) {
+  if (month === 11 || month < 2) {
     bodyBackground.classList.add("winter") &&
       appBackground.classList.add("winter");
-  } else if (month > 2 && month < 6) {
-    bodyBackground.classList.add("spring");
-  } else if (month > 5 && month < 8) {
-    bodyBackground.classList.add("summer");
+  } else if (month > 1 && month < 5) {
+    bodyBackground.classList.add("spring") &&
+      appBackground.classList.add("spring");
+  } else if (month > 4 && month < 8) {
+    bodyBackground.classList.add("summer") &&
+      appBackground.classList.add("summer");
   } else if (month > 7 && month < 11) {
-    bodyBackground.classList.add("autumn");
+    bodyBackground.classList.add("autumn") &&
+      appBackground.classList.add("autumn");
   }
 }
 
@@ -98,24 +101,41 @@ function searchForCurrentlocation(position) {
 }
 
 function getCurrentLocation(event) {
-  event.preventDefault();
+  event.preventDefault;
   navigator.geolocation.getCurrentPosition(searchForCurrentlocation);
 }
-
+function tryWinterImage() {
+  document.body.style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/121/original/winter.jpg?1663063500')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
+}
+function trySpringImage() {
+  document.body.style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/119/original/spring.jpg?1663063481')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
+}
+function trySummerImage() {
+  document.body.style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/120/original/summer.jpg?1663063490')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
+}
+function tryAutumnImage() {
+  document.body.style.backgroundImage =
+    "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/118/original/autumn.jpg?1663063469')";
+  document.body.style.backgroundRepeat = "no-repeat";
+  document.body.style.backgroundSize = "cover";
+}
 formatCurrentTime(new Date());
 changeSeasons(new Date().getMonth());
-let submitForm = document.querySelector("#submit-form");
-submitForm.addEventListener("submit", handleSubmit);
-let currentLocationButton = document.querySelector("#search-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
-let tryWinterLink = document.querySelector("#winter");
-tryWinterLink.addEventListener("click", changeSeasons(0));
-let trySpringLink = document.querySelector("#spring");
-trySpringLink.addEventListener("click", changeSeasons(3));
-let trySummerLink = document.querySelector("#summer");
-trySummerLink.addEventListener("click", changeSeasons(6));
-let tryAutumnLink = document.querySelector("#autumn");
-tryAutumnLink.addEventListener("click", changeSeasons(9));
-
-console.log(tryWinterLink);
+document.querySelector("#submit-form").addEventListener("submit", handleSubmit);
+document
+  .querySelector("#search-button")
+  .addEventListener("click", getCurrentLocation);
 searchCity("Kyiv");
+document.querySelector("#winter").addEventListener("click", tryWinterImage);
+document.querySelector("#spring").addEventListener("click", trySpringImage);
+document.querySelector("#summer").addEventListener("click", trySummerImage);
+document.querySelector("#autumn").addEventListener("click", tryAutumnImage);
