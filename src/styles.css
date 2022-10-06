@@ -191,3 +191,7 @@ footer {
 .fa-earth-americas {
   font-size: 26px;
 }
+
+img.current-icon {
+  width: 80px;
+}
